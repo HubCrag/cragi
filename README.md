@@ -28,6 +28,10 @@ After that, you can use of the proposed build commands (the resulting files go t
 │   │   ├── mixins                # folder for saving finished scss components
 │   │   ├── vendor                # folder for storing local css-style libraries
 │   ├── dist                      # folder for storing other assets - php, video files, favicon, etc.
+│   ├── partials                  # partials in HTML files.
+│   │   ├── base                  # folder base html partials (header, footer ...)
+│   │   │   └── header.hbs        # header html part 
+│   │   └── hero.hbs              # example (hero) html part 
 │   └── index.html                # Main html file
 │   └── main.js                   # Main js file
 └── vite.config.js                # file with Vite settings

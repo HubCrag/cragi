@@ -1,7 +1,10 @@
 {
   "name": "cragi",
+  "author": "HubCrag",
+  "email" : "hubcrag@gmail.com",
+  "url" : "https://github.com/HubCrag/cragi",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
