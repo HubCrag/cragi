@@ -1,7 +1,7 @@
 // vite.config.js
 import { resolve } from 'path'
 import { defineConfig } from 'vite';
-import injectHTML from 'vite-plugin-html-inject';
+import handlebars from 'vite-plugin-handlebars';
 
 const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
@@ -9,7 +9,11 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
     root: 'src',
     publicDir: 'dist',
-    plugins: [injectHTML()],
+    plugins: [
+        handlebars({
+            partialDirectory: resolve(root, 'partials'),
+        }),
+    ],
     build: {
         // output dir for production build
         outDir,

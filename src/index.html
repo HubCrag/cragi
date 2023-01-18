@@ -7,8 +7,10 @@
     <title>Cragi Starter Template vite js</title>
   </head>
   <body>
-    <!-- Loads the specified .html file -->
-		<load ="partials/base/header.html" />
+    {{> "base/header"}}
+    <main class="main">
+      {{> hero}}
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
