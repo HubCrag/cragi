@@ -2,6 +2,8 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+
 
 const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
@@ -12,6 +14,24 @@ export default defineConfig({
     plugins: [
         handlebars({
             partialDirectory: resolve(root, 'partials'),
+        }),
+        createSvgIconsPlugin({
+            // Specify the icon folder to be cached
+            iconDirs: [resolve(process.cwd(), 'src/icons')],
+            // Specify symbolId format
+            symbolId: 'icon-[dir]-[name]',
+
+            /**
+             * custom insert position
+             * @default: body-last
+             */
+            //inject: 'body-last' | 'body-first',
+
+            /**
+             * custom dom id
+             * @default: __svg__icons__dom__
+             */
+            //customDomId: '__svg__icons__dom__',
         }),
     ],
     build: {
