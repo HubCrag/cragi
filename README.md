@@ -21,7 +21,7 @@ After that, you can use of the proposed build commands (the resulting files go t
 │   │   └── vendor.scss           # File for including library styles from the vendor folder
 │   │   └── _fonts.scss           # File for connecting fonts (you can use a mixin)
 │   │   └── _mixins.scss          # File for connecting mixins from the mixins folder
-│   │   └── _variabless.scss            # File for writing css or scss variables
+│   │   └── _variabless.scss      # File for writing css or scss variables
 │   │   └── base.scss             # File for writing global styles
 │   │   ├── components            # scss components
 │   │   ├── mixins                # folder for saving finished scss components
