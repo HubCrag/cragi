@@ -21,11 +21,13 @@ After that, you can use of the proposed build commands (the resulting files go t
 │   │   └── vendor.scss           # File for including library styles from the vendor folder
 │   │   └── _fonts.scss           # File for connecting fonts (you can use a mixin)
 │   │   └── _mixins.scss          # File for connecting mixins from the mixins folder
-│   │   └── _vars.scss            # File for writing css or scss variables
-│   │   └── _settings.scss        # File for writing global styles
+│   │   └── _variabless.scss            # File for writing css or scss variables
+│   │   └── base.scss             # File for writing global styles
 │   │   ├── components            # scss components
 │   │   ├── mixins                # folder for saving finished scss components
+│   │   │   └── _breakpoint.scss  # _breakpoint.scss
 │   │   ├── vendor                # folder for storing local css-style libraries
+│   │   │   └── normalize.css     # normalize css
 │   ├── dist                      # folder for storing other assets - php, video files, favicon, etc.
 │   ├── partials                  # partials in HTML files.
 │   │   ├── base                  # folder base html partials (header, footer ...)
