@@ -11,6 +11,7 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
     root: 'src',
     publicDir: 'dist',
+    base: '',
     plugins: [
         handlebars({
             partialDirectory: resolve(root, 'partials'),
