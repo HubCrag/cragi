@@ -6,7 +6,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 
 const root = resolve(__dirname, 'src')
-const outDir = resolve(__dirname, 'dist')
+const outDir = resolve(__dirname, 'build')
 
 export default defineConfig({
     root: 'src',

@@ -112,38 +112,15 @@ em {
   height: 100%;
 }
 
-.list-reset {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .content {
   height: 100%;
 }
-
 
 .container {
   max-width: 1220px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.align-center {
-  align-items: center;
-}
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 
