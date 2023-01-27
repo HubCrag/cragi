@@ -1,0 +1,23 @@
+{
+    "gitlens.hovers.currentLine.over": "line",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "emmet.triggerExpansionOnTab": true,
+    "editor.fontSize": 13,
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.includeLanguages": {
+        "html-eex": "html",
+        "plaintext": "html",
+        "Handlebars": "hbs"
+      },
+    "emmet.includeLanguages": {
+        "html-eex": "html",
+        "Handlebars": "html"
+      },
+      "files.associations": {
+        "*.eex": "html-eex",
+        "*.leex": "html-eex"
+      },
+      "editor.minimap.enabled": false
+}

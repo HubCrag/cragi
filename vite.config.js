@@ -8,13 +8,26 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'build')
 
+function handlebarsOverride(options) {
+    const plugin = handlebars(options);
+    // Currently handleHotUpdate skips further processing, which bypasses
+    // postcss and in turn tailwind doesn't pick up file changes
+    delete plugin.handleHotUpdate;
+    return plugin;
+}
+
 export default defineConfig({
     root: 'src',
     publicDir: 'dist',
     base: '',
     plugins: [
-        handlebars({
-            partialDirectory: resolve(root, 'partials'),
+        handlebarsOverride({
+            partialDirectory: resolve(__dirname, 'src/partials'),
+            helpers: {
+                json: (context) => {
+                    return JSON.stringify(context);
+                }
+            }
         }),
         createSvgIconsPlugin({
             // Specify the icon folder to be cached

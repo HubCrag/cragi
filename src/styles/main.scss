@@ -1,13 +1,7 @@
-// Commons
-@import "variables.scss";
-@import "./mixins/breakpoint.scss";
-
 // Base
-@import "./vendor/normalize.css";
-@import "reset.scss";
 @import "fonts.scss";
-@import "mini.scss";
-@import "base.scss";
+@import "reset.scss";
 
-// Components
-@import "./components/example.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
