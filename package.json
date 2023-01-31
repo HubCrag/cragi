@@ -1,8 +1,8 @@
 {
   "name": "cragi",
   "author": "HubCrag",
-  "email" : "hubcrag@gmail.com",
-  "url" : "https://github.com/HubCrag/cragi",
+  "email": "hubcrag@gmail.com",
+  "url": "https://github.com/HubCrag/cragi",
   "private": true,
   "version": "0.0.2",
   "type": "module",
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "fast-glob": "^3.2.12",
     "postcss": "^8.4.21",
     "sass": "^1.57.1",
     "tailwindcss": "^3.2.4",
