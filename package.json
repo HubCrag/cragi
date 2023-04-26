@@ -1,8 +1,8 @@
 {
   "name": "cragi",
   "author": "HubCrag",
-  "email" : "hubcrag@gmail.com",
-  "url" : "https://github.com/HubCrag/cragi",
+  "email": "hubcrag@gmail.com",
+  "url": "https://github.com/HubCrag/cragi",
   "private": true,
   "version": "0.0.2",
   "type": "module",
@@ -17,5 +17,8 @@
     "vite": "^4.0.0",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }

@@ -9,13 +9,15 @@ body {
   padding: 0;
   color: $color-text;
   background-color: $color-light;
-  font-family: $font-family;
+  //font-family: $font-family;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
   line-height: $line-height;
   text-align: left;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font: 14px/1.7 "Open Sans", sans-serif;
+  color: #2d2d2d;
 }
 
 * {
@@ -117,11 +119,8 @@ em {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1180px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-
-

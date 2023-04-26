@@ -4,10 +4,11 @@
 
 // Base
 @import "./vendor/normalize.css";
+@import "bootstrap/scss/bootstrap";
 @import "reset.scss";
 @import "fonts.scss";
 @import "mini.scss";
 @import "base.scss";
 
 // Components
-@import "./components/example.scss";
+@import "./components/header.scss";

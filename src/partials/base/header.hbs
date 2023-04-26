@@ -1,15 +1,390 @@
-<style>
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-    img {
-        max-width: 400px;
-    }
-</style>
+<header class="header">
+  <div class="header-head">
+    <div class="container">
+      <div class="row">
+        <div class="left-block col-lg-9 block-nav">
+          <ul class="menu" id="topMenu">
+            <li>
+              <a href="/orders/">Как заказать</a>
+            </li>
+            <li>
+              <a href="/payment/">Способы оплаты</a>
+            </li>
+            <li>
+              <a href="/partner/">Сотрудничество</a>
+            </li>
+            <li>
+              <a href="/documents/">Документы</a>
+            </li>
+            <li>
+              <a href="/delivery/">Доставка</a>
+            </li>
+            <li>
+              <a href="/contacts/">Контакты</a>
+            </li>
 
-<header></header>
-<img src="assets/img/cragi-vite.png" alt="">
+            <li><a href="/news/">Новости</a></li>
+          </ul>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-toggle="collapse"
+            data-target="#topMenu"
+          ><i class="icon icon-menu fix-width"></i></button>
+        </div>
+        <div class="contacts block-nav mobile-only">
+          <ul class="menu collapse" id="topPhones">
+            <li>
+              <a href="tel:+78007750563">+7 (800) 775-05-63</a>
+              <span>Бесплатно по России</span>
+            </li>
+            <li><a href="tel:+74993720463">+7 (499) 372-04-63</a></li>
+            <li><a href="tel:+74959693600">+7 (495) 969-36-00</a></li>
+          </ul>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-toggle="collapse"
+            data-target="#topPhones"
+          ><i class="icon icon-phone fix-width"></i></button>
+        </div>
+        <div class="locations block-nav mobile-only">
+          <ul class="menu collapse" id="topLocations">
+            <li><span>Мичуринский пр-т Олимпийская деревня, д.4 к.3</span></li>
+            <li><span>ПН-СБ 9:00 до 20:00</span></li>
+            <li><span>ВС - выходной день</span></li>
+          </ul>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-toggle="collapse"
+            data-target="#topLocations"
+          ><i class="icon icon-location fix-width"></i></button>
+        </div>
+        <div class="find block-nav mobile-only">
+          <ul class="menu collapse" id="topSearch">
+            <li>
+              <div class="col-sm-6">
+                <form
+                  id="main-search"
+                  method="POST"
+                  action="/search/9091510004"
+                  role="search"
+                >
+                  <input
+                    type="text"
+                    name="article"
+                    placeholder="Искать запчасть по коду"
+                    class="form-control search"
+                    value="9091510004"
+                  />
+                  <button type="submit" class="form-control search-button">
+                    <img src="#" alt="Поиск" title="Поиск" />
+                  </button>
+                </form>
+              </div>
+              <!--noindex-->
+              <div class="col-sm-6 vin-request">
+                <form
+                  action="/vin-request/vinreq/"
+                  method="POST"
+                  id="vin-request-form"
+                >
+                  <input
+                    id="vin-code"
+                    type="text"
+                    class="form-control"
+                    name="vin"
+                    placeholder="Запрос запчасти по VIN коду"
+                  />
+                  <div id="vin-request-popup">
+                    <p>
+                      <label>Марка автомобиля</label>
+                      <select name="brand" class="form-control">';
+                        <option value="alfa romeo"> alfa romeo</option>
+                        <option value="audi"> audi</option>
+                        <option value="bentley"> bentley</option>
+                        <option value="bmw"> bmw</option>
+                        <option value="cadillac"> cadillac</option>
+                        <option value="chery"> chery</option>
+                        <option value="chevrolet"> chevrolet</option>
+                        <option value="chrysler"> chrysler</option>
+                        <option value="citroen"> citroen</option>
+                        <option value="daewoo"> daewoo</option>
+                        <option value="daihatsu"> daihatsu</option>
+                        <option value="dodge"> dodge</option>
+                        <option value="fiat"> fiat</option>
+                        <option value="ford"> ford</option>
+                        <option value="ford usa"> ford usa</option>
+                        <option value="geely"> geely</option>
+                        <option value="gmc"> gmc</option>
+                        <option value="great wall"> great wall</option>
+                        <option value="honda"> honda</option>
+                        <option value="hummer"> hummer</option>
+                        <option value="hyundai"> hyundai</option>
+                        <option value="infiniti"> infiniti</option>
+                        <option value="isuzu"> isuzu</option>
+                        <option value="iveco"> iveco</option>
+                        <option value="jaguar"> jaguar</option>
+                        <option value="jeep"> jeep</option>
+                        <option value="kia"> kia</option>
+                        <option value="land rover"> land rover</option>
+                        <option value="lexus"> lexus</option>
+                        <option value="lincoln"> lincoln</option>
+                        <option value="man"> man</option>
+                        <option value="maybach"> maybach</option>
+                        <option value="mazda"> mazda</option>
+                        <option value="mercedes-benz"> mercedes-benz</option>
+                        <option value="mini"> mini</option>
+                        <option value="mitsubishi"> mitsubishi</option>
+                        <option value="nissan"> nissan</option>
+                        <option value="opel"> opel</option>
+                        <option value="peugeot"> peugeot</option>
+                        <option value="porsche"> porsche</option>
+                        <option value="renault"> renault</option>
+                        <option value="rover"> rover</option>
+                        <option value="saab"> saab</option>
+                        <option value="seat"> seat</option>
+                        <option value="skoda"> skoda</option>
+                        <option value="smart"> smart</option>
+                        <option value="ssangyong"> ssangyong</option>
+                        <option value="subaru"> subaru</option>
+                        <option value="suzuki"> suzuki</option>
+                        <option value="toyota"> toyota</option>
+                        <option value="volvo"> volvo</option>
+                        <option value="vw"> vw</option>
+                      </select>
+                      <input type="hidden" name="model" />
+                      <input type="hidden" name="modif" />
+                    </p>
+                    <p>
+                      <label>Ваше имя</label>
+                      <input
+                        value=""
+                        name="name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </p>
+                    <p>
+                      <label>Ваш телефон</label>
+                      <input
+                        value=""
+                        type="text"
+                        name="phone"
+                        class="form-control"
+                      />
+                    </p>
+                    <p>
+                      <label>Ваш e-mail</label>
+                      <input
+                        value=""
+                        type="text"
+                        name="mail"
+                        class="form-control"
+                      />
+                    </p>
+                    <p>
+                      <label>Необходимые Вам детали</label>
+                      <textarea
+                        class="form-control"
+                        name="description"
+                      ></textarea>
+                    </p>
+                    <p id="vinRequestSubmit"><input
+                        type="submit"
+                        class="btn btn-primary"
+                        value="Отправить запрос"
+                      /></p>
+                  </div>
+                </form>
+              </div>
+              <!--/noindex-->
+              <div id="answer-modal"></div>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-toggle="collapse"
+            data-target="#topSearch"
+          ><i class="icon icon-find fix-width"></i></button>
+        </div>
+        <div class="right-block col-lg-3 user-menu block-nav">
+          <!--noindex-->
+          <div id="userMenu" class="d-flex gap-1 align-items-center">
+            <svg class="icon">
+              <use xlink:href="#icon-long-key"></use>
+            </svg>
+            <div class="log-reg">
+              <a
+                href="#"
+                class="login-link"
+                data-redirect="0"
+                id="loginLink"
+              >Войти</a>
+              или
+              <a href="/signup">зарегистрироваться</a>
+            </div>
+          </div>
+          <!--/noindex-->
+          <button
+            type="button"
+            class="usermenu-toggle"
+            data-toggle="#userMenu"
+          ><i class="icon icon-key fix-width"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="#" class="logo">
+            <img src="assets/img/logo.svg" alt="Logo    " />
+          </a>
+        </div>
+        <div class="col-md-3">
+          <div class="icon-box icon-pointer choose-dealer">
+            <div class="d-flex align-items-start gap-2">
+              <svg class="icon">
+                <use xlink:href="#icon-location"></use>
+              </svg>
+              <div>
+                <div class="dropdown dropdown-select">
+                  <button class="dropdown__button" type="button">Мичуринский
+                    пр-т Олимпийская деревня, д.4 к.2</button>
+                  <ul class="dropdown__list">
+                    <li
+                      class="dropdown__list-item"
+                      data-value="0"
+                    >Мичуринский пр-т Олимпийская деревня, д.4 к.1</li>
+                    <li
+                      class="dropdown__list-item dropdown__list-item_active"
+                      data-value="1"
+                    >Мичуринский пр-т Олимпийская деревня, д.4 к.2</li>
+                    <li
+                      class="dropdown__list-item"
+                      data-value="2"
+                    >Мичуринский пр-т Олимпийская деревня, д.4 к.3</li>
+                  </ul>
+                  <input
+                    class="dropdown__input_hidden"
+                    type="text"
+                    name="select-category"
+                    value=""
+                  />
+                </div>
+
+                <div id="layout-text-1">
+                  <span class="working-hours">ПН-СБ 9:00 до 20:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-start gap-2">
+            <svg class="icon">
+              <use xlink:href="#icon-call"></use>
+            </svg>
+            <div id="layout-text-2" class="icon-box icon-phone">
+              <div class="phone"><strong><a href="tel:++7 (800) 775-05-63">+7
+                    (800) 775-05-63</a></strong></div>
+              <span>Бесплатно по России</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-start gap-2 mb-2">
+            <svg class="icon">
+              <use xlink:href="#icon-call"></use>
+            </svg>
+            <div id="layout-text-3" class="icon-box icon-phone d-flex gap-2">
+              <div class="phone"><strong><a href="tel:++7 (499) 372-04-63">+7
+                    (499) 372-04-63</a></strong></div>
+              <span>Офис</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <svg class="icon">
+              <use xlink:href="#icon-call"></use>
+            </svg>
+            <div id="layout-text-3" class="icon-box icon-phone d-flex gap-2">
+              <div class="phone"><strong><a href="tel:+7 (495) 969-36-00">+7
+                    (495) 969-36-00</a></strong></div>
+              <span>Склад</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="dropdown catalog">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg class="icon">
+              <use xlink:href="#icon-catalog"></use>
+            </svg>
+            Каталог
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Оригинальные каталоги</a></li>
+            <li><a class="dropdown-item" href="#">Аккумуляторы</a></li>
+            <li><a class="dropdown-item" href="#">Масла и автохимия</a></li>
+            <li><a class="dropdown-item" href="#">Каталог ТО</a></li>
+            <li><a class="dropdown-item" href="#">Аналоги запчастей</a></li>
+            <li><a class="dropdown-item" href="#">Инструменты</a></li>
+          </ul>
+        </div>
+        <div class="search d-flex">
+          <div class="dropdown dropdown-select search-type">
+            <button class="dropdown__button" type="button">Поиск по номеру</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="Поиск по номеру">Поиск по номеру</li>
+              <li
+                class="dropdown__list-item dropdown__list-item_active"
+                data-value="Поиск по названию"
+              >Поиск по названию</li>
+            </ul>
+            <input
+              class="dropdown__input_hidden"
+              type="text"
+              name="select-category"
+              value=""
+            />
+          </div>
+          <div class="search-form">
+            <input type="text" placeholder="Введите номер запчасти, например: 12345678">
+            <button class="btn"><svg class="icon">
+              <use xlink:href="#icon-search"></use>
+            </svg> Найти</button>
+          </div>
+        </div>
+        <div class="favorites">
+            <svg class="icon">
+              <use xlink:href="#icon-heart"></use>
+            </svg>
+        </div>
+        <div class="cart d-flex">
+            <svg class="icon">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            <span class="txt"><span class="count">0</span> товаров на сумму</span>
+            <span class="price">0 р.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
